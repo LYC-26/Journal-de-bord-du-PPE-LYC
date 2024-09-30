@@ -1,0 +1,47 @@
+Après avoir fini l'exercice 1, je trouve que la compréhension des commandes est vraiment importante. Donc, à partir de maintnant, je vais noter ici tous les commandes que j'ai utilisé pendant la pratique.
+1. mkdir ~/
+   Crée un répertoire vide dans le répertoire personnel de l'utilisateur. ~ représente le répertoire personnel.
+2. mkdir -p img/{Berlin,Kyoto,Paris,Rome,Taipei,Tokyo,Washington}
+   Crée plusieurs répertoires à la fois. L'option -p permet de créer des répertoires parents si nécessaire. Ici, cela crée les répertoires Berlin, Kyoto, Paris, Rome, Taipei, Tokyo et Washington dans le répertoire img.
+3. mkdir -p img/Berlin img/Kyoto img/Paris img/Rome img/Taipei img/Tokyo img/Washington
+4. mkdir -p txt/2016/{01,02,03,04,05,06,07,08,09,10,11,12}
+5. wget
+   Télécharge un fichier depuis Internet. Cette commande nécessite généralement une URL en argument pour spécifier quel fichier télécharger.
+6. ls
+   Affiche la liste des fichiers et des répertoires dans le répertoire courant.
+7. ls -R txt ann
+   Affiche la liste des fichiers et des répertoires dans txt et ann, y compris les sous-répertoires (l'option -R signifie récursif).
+8. ls img
+   Affiche la liste des fichiers et des répertoires dans le répertoire img.
+9. unzip
+   Décompresse un fichier ZIP. Cette commande nécessite généralement un nom de fichier ZIP en argument pour spécifier quel fichier décompresser.
+10. rmdir
+    Supprime un répertoire vide. Si le répertoire contient des fichiers ou des sous-répertoires, la commande échouera.
+11. cd ~/
+    Change le répertoire courant pour le répertoire personnel de l'utilisateur.
+12. cd ..
+    Change le répertoire courant pour le répertoire parent du répertoire actuel.
+13. cd
+    Sans argument, cette commande change le répertoire courant pour le répertoire personnel de l'utilisateur.
+14. mv 2016_01_*.ann ann/2016/01/
+    Déplace tous les fichiers qui commencent par 2016_01_ et se terminent par .ann vers le répertoire ann/2016/01/.
+15. &&
+    Un opérateur logique qui exécute la commande suivante uniquement si la commande précédente s'est exécutée avec succès.
+16. mv *Berlin*.* img/Berlin/
+    Déplace tous les fichiers dont le nom contient Berlin vers le répertoire img/Berlin/.
+17. rm archive-8.zip
+    Supprime le fichier archive-8.zip.
+18. pwd
+    Affiche le chemin complet du répertoire courant (print working directory).
+19. zip -r A.zip B
+    Crée un fichier ZIP nommé A.zip qui contient le répertoire B et tout son contenu de manière récursive.
+20. mv A B
+    Déplace le fichier ou répertoire A dans le répertoire B.
+21. history >history.txt
+    Enregistre l'historique des commandes dans un fichier nommé history.txt.
+22. history
+    Affiche l'historique des commandes précédemment exécutées dans le terminal.
+23. history -a
+    Ajoute les nouvelles entrées de l'historique à l'historique de l'utilisateur enregistré.
+24. history 1-127 > history.txt
+    Enregistre les commandes de l'historique allant de 1 à 127 dans le fichier history.txt.
